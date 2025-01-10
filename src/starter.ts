@@ -1,8 +1,8 @@
-import { FreonLayout, WebappConfigurator, setDevelopment } from "@freon4dsl/webapp-lib";
-import { configureExternals } from "./configure/externals.js";
+import { ServerCommunication } from "@freon4dsl/core";
+import { FreonLayout, setDevelopment, WebappConfigurator } from "@freon4dsl/webapp-lib";
+import { configureExternals } from "./external/externals.js";
 import { LanguageEnvironment } from "./freon/index.js";
 import { configureLoggers } from "./loggers.js";
-import { ServerCommunication} from "@freon4dsl/core";
 // import { LionWebRepositoryCommunication } from "@freon4dsl/core"
 
 /**
