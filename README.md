@@ -13,11 +13,11 @@ Project Structure</a>.
 
 In the following the root of the project will be indicated with '~'.
 
-*   Clone or copy branch `master`.
+*   Clone or copy branch `main`.
 
 *   Next, install all necessary packages by running:
     ```bash
-    yarn install
+    npm install
     ```
 
 *   Create a folder for your language in `~/src`, to hold the definition files for your language.
@@ -39,7 +39,7 @@ In the following the root of the project will be indicated with '~'.
     decided to store the generated code:
 
 ```bash
-    yarn generate
+    npm run generate
 ```
 
 *   Adjust the configuration of the web application by changing the two lines in the file
@@ -47,7 +47,7 @@ In the following the root of the project will be indicated with '~'.
 
 *   Start the server (note that anything that is saved in the editor will be stored in `~/modelstore`):
     ```bash
-    yarn model-server
+    npm run server
     ```
 
 *	Open another (bash) terminal, and start the generated editor from it:
