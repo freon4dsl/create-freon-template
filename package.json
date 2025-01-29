@@ -13,7 +13,6 @@
     "validate": "svelte-check",
     "errors-only": "svelte-check --threshold error",
     "generate": "freon all -d src/defs -o src/freon",
-    "install-local": "npm install --registry http://localhost:4873",
     "prepare-app": "npm run styles-light && npm run styles-dark",
     "styles-light": "smui-theme compile public/site.css -i style",
     "styles-dark": "smui-theme compile public/site-dark.css -i style/dark",

@@ -1,0 +1,11 @@
+// Just a dummy so we can compile this template
+language Dummy
+
+model Dummy {
+    name: string;
+    units: DummyUnit[];
+}
+
+modelunit DummyUnit {
+    name: identifier;
+}
