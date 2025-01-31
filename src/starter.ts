@@ -1,5 +1,5 @@
 import { ServerCommunication } from "@freon4dsl/core";
-import { FreonLayout, setDevelopment, WebappConfigurator } from "@freon4dsl/webapp-lib";
+import { FreonLayout, WebappConfigurator } from "@freon4dsl/webapp-lib";
 import { configureExternals } from "./external/externals.js";
 import { LanguageEnvironment } from "./freon/index.js";
 import { configureLoggers } from "./loggers.js";
@@ -10,7 +10,7 @@ import { configureLoggers } from "./loggers.js";
  */
 WebappConfigurator.getInstance().setEditorEnvironment(LanguageEnvironment.getInstance());
 WebappConfigurator.getInstance().setServerCommunication(ServerCommunication.getInstance());
-setDevelopment(true)
+
 configureExternals()
 configureLoggers()
 
