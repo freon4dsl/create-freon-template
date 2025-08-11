@@ -1,23 +1,24 @@
-import { ServerCommunication } from "@freon4dsl/core";
-import { FreonLayout, WebappConfigurator } from "@freon4dsl/webapp-lib";
-import { configureExternals } from "./external/externals.js";
-import { LanguageEnvironment } from "./freon/index.js";
-import { configureLoggers } from "./loggers.js";
-// import { LionWebRepositoryCommunication } from "@freon4dsl/core"
+import { mount } from 'svelte'
+import { FlowbiteFreonLayout, WebappConfigurator, setDevelopment } from "@freon4dsl/weblib-flowbite"
+import { configureExternals } from "./external/externals.js"
+import { configureLoggers } from "./loggers.js"
+import { LanguageEnvironment } from "./freon/"
+import { ServerCommunication } from "@freon4dsl/core"
 
 /**
  * Initialize everything
  */
-WebappConfigurator.getInstance().setEditorEnvironment(LanguageEnvironment.getInstance());
-WebappConfigurator.getInstance().setServerCommunication(ServerCommunication.getInstance());
-
+WebappConfigurator.getInstance().setEnvironment(
+    LanguageEnvironment.getInstance(),
+    ServerCommunication.getInstance(),
+);
+setDevelopment(true)
 configureExternals()
 configureLoggers()
 
-/**
- * Now start the app ...
- */
-const app = new FreonLayout({
-    target: document.body,
-});
-export default app;
+const app = mount(FlowbiteFreonLayout, {
+    target: document.getElementById('freon')!,
+})
+
+export default app
+
