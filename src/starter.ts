@@ -12,7 +12,7 @@ WebappConfigurator.getInstance().setEnvironment(
     LanguageEnvironment.getInstance(),
     ServerCommunication.getInstance(),
 );
-setDevelopment(true)
+setDevelopment(false)
 configureExternals()
 configureLoggers()
 
