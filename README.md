@@ -48,7 +48,7 @@ npm run styles
 npm run dev
 ```
 The first (styles) command only needs to be done once, and only
-needs to be run again if you change the stylingß.
+needs to be run again if you change the styling.
 
 The last command opens your preferred browser with the generated editor for the language
 on typically  http://localhost:5174 (http://localhost:5174).
