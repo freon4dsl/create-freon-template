@@ -44,17 +44,17 @@ Note that anything that is saved in the editor will be stored in `~/modelstore`
 ### Start the Web Editor
 Open another (bash) terminal, and start the generated editor from it:
 ```bash
-npm run prepare-app
+npm run styles
 npm run dev
 ```
-The first (prepare-app) command only needs to be done once, and only
-needs to be run again if you change the styling.
+The first (styles) command only needs to be done once, and only
+needs to be run again if you change the stylingß.
 
 The last command opens your preferred browser with the generated editor for the language
-on [localhost:5000](http://localhost:5000/).
+on typically  http://localhost:5174 (http://localhost:5174).
 
 ### Try out the editor
 
 If you are having trouble using the editor, have a look at the key-bindings under the *Help* menu.
 
-If you change the theme, run `npm run prepare-app` to update the running app with the new style.
+If you change the theme, run `npm run styles` to update the running app with the new style.
